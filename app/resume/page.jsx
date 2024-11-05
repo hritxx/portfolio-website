@@ -77,7 +77,7 @@ const experience = {
       duration: "May - June , 2023",
     },
     {
-      company: "National Institute of Technology, Duragpur",
+      company: "National Institute of Technology, Durgapur",
       position: "Ml and AI Research Intern",
       duration: "May - July , 2024",
     },
