@@ -23,47 +23,77 @@ const projects = [
   {
     num: "01",
     category: "Frontend",
-    title: "Portfolio Website",
+    title: "ECE Website Development Project",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "Javascript" }],
+      "ECE Department's website development using HTML, CSS, and JavaScript.",
+    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
     image: "/assets/work/thumb2.png",
     live: "https://ece.iutripura.in/",
-    github: "https://github.com/hriteekk/Portfolio",
+    github: "https://github.com/hritxx", // Update with the actual GitHub link if available
   },
   {
     num: "02",
-    category: "Frontend",
-    title: "Portfolio Website",
+    category: "Full Stack Development",
+    title: "ChatWiz: Full Stack MERN Project",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-    stack: [{ name: "REACT" }, { name: "Daisy Ui" }, { name: "Javascript" }],
-    image: "/assets/work/thumb3.png",
-    live: "https://hriteek.netlify.app/",
-    github: "https://github.com/hriteekk/Portfolio",
+      "A Chat App using React JavaScript for frontend and NodeJS and Express for backend with JWT authentication.",
+    stack: [
+      { name: "React" },
+      { name: "Node.js" },
+      { name: "Express" },
+      { name: "JWT" },
+    ],
+    image: "/assets/work/thumb1.png",
+    live: "https://chatwiz-vw96.onrender.com/",
+    github: "https://github.com/hritxx/ChatWiz", // Update with the actual GitHub link if available
   },
-
   {
     num: "03",
     category: "Frontend",
-    title: "Portfolio Website",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-    stack: [{ name: "Python" }, { name: "Tensorflow" }, { name: "Open CV" }],
-    image: "/assets/work/thumb1.png",
-    live: "https://hriteek.netlify.app/",
-    github: "https://github.com/hriteekk/Portfolio",
+    title: "ICFAI FC Website Development Project",
+    description: "A React-based frontend project using JavaScript and CSS.",
+    stack: [{ name: "React" }, { name: "JavaScript" }, { name: "CSS" }],
+    image: "/assets/work/thumb3.png",
+    live: "https://hritxx.github.io/icfai_fc/",
+    github: "https://github.com/hritxx/icfai_fc", // Update with the actual GitHub link if available
   },
   {
     num: "04",
+    category: "Full Stack Development",
+    title: "নব বাজার: A MERN E-Commerce Store",
+    description:
+      "A e-commerce platform with secure Stripe payments, JWT authentication, and Redis caching and robust admin control.",
+    stack: [
+      { name: "React" },
+      { name: "Node.js" },
+      { name: "MongoDB" },
+      { name: "Stripe" },
+    ],
+    image: "/assets/work/ecom.png", // Replace with an appropriate image
+    live: "https://e-commerce-store-1-u31q.onrender.com",
+    github: "https://github.com/hritxx/e-commerce-store", // Update with the actual GitHub link if available
+  },
+  {
+    num: "05",
+    category: "Frontend",
+    title: "Interactive Business Portfolio",
+    description:
+      "A modern business portfolio website built with Next.js and Framer, featuring fast performance and engaging interactive design.",
+    stack: [{ name: "Next.js" }, { name: "Framer" }],
+    image: "/assets/work/portfolio.png", // Replace with an appropriate image
+    live: "https://ortusfinance.in",
+    github: "https://github.com/hritxx/portfolio-website", // Update with the actual GitHub link if available
+  },
+  {
+    num: "06",
     category: "Frontend",
     title: "Portfolio Website",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
-    live: "https://hriteek.netlify.app/",
-    github: "https://github.com/hriteekk/Portfolio",
+      "A modern portfolio website built with Next.js and Framer Motion, showcasing interactive animations and responsive design to highlight creative projects and skills.",
+    stack: [{ name: "Next.js" }, { name: "Framer Motion" }],
+    image: "/assets/work/ortus.png", // Replace with an appropriate image
+    live: "https://portfolio-website-beige-five.vercel.app/services",
+    github: "https://github.com/hritxx/ortus_website", // Update with the actual GitHub link if available
   },
 ];
 

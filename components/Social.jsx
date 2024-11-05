@@ -12,9 +12,9 @@ const socials = [
   { icon: <FaInstagram />, path: "https://www.instagram.com/_hriteek007/" },
 ];
 
-const Social = ({ contsinerStyles, iconStyles }) => {
+const Social = ({ containerStyles, iconStyles }) => {
   return (
-    <div className={contsinerStyles}>
+    <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
           <Link key={index} href={item.path} className={iconStyles}>

@@ -26,10 +26,24 @@ const services = [
   },
   {
     num: "04",
-    title: "HTML CSS Project",
+    title: "নব বাজার : A MERN E-Commerce Store ",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-    href: "",
+      "A e-commerce platform with secure Stripe payments, JWT authentication, and Redis caching and robust admin control.",
+    href: "https://e-commerce-store-1-u31q.onrender.com",
+  },
+  {
+    num: "05",
+    title: "Interactive Business Portfolio",
+    description:
+      "A modern business portfolio website built with Next.js and Framer, featuring fast performance and engaging interactive design.",
+    href: "https://ortusfinance.in",
+  },
+  {
+    num: "06",
+    title: "Portfolio Website",
+    description:
+      "A modern portfolio website built with Next.js and Framer Motion, showcasing interactive animations and responsive design to highlight creative projects and skills.",
+    href: "https://portfolio-website-beige-five.vercel.app/services",
   },
 ];
 

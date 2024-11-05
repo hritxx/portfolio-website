@@ -2,19 +2,33 @@
 
 import {
   FaHtml5,
-  FaCss3,
   FaJs,
   FaReact,
   FaNodeJs,
   FaPython,
+  FaDatabase,
+  FaGitAlt,
+  FaCodeBranch,
 } from "react-icons/fa";
-
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiRust,
+  SiRedis,
+  SiPytorch,
+  SiTensorflow,
+  SiDocker,
+  SiExpress,
+  SiPostgresql,
+  SiFirebase,
+  SiKubernetes,
+} from "react-icons/si";
 
 const about = {
   title: "About Me",
   description:
-    " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+    " I am a dedicated full-stack developer with expertise in modern web technologies like React, Node.js, and TypeScript, currently pursuing a Bachelor of Computer Science. Passionate about machine learning and innovative solutions, I strive to create user-friendly applications and contribute effectively to team projects.",
   info: [
     {
       fieldName: "Name",
@@ -22,7 +36,7 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+91) 825 694 3297",
+      fieldValue: "(+91)825 694 3297",
     },
     {
       fieldName: "Experience",
@@ -30,7 +44,7 @@ const about = {
     },
     {
       fieldName: "LinkedIn",
-      fieldValue: "Hriteek",
+      fieldValue: "Hriteek Roy",
     },
     {
       fieldName: "Nationality",
@@ -55,52 +69,32 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+    "I am a dedicated full-stack developer with expertise in modern web technologies like React, Node.js, and TypeScript, currently pursuing a Bachelor of Computer Science. Passionate about machine learning and innovative solutions, I strive to create user-friendly applications and contribute effectively to team projects.",
   items: [
     {
-      company: "Company Name",
-      position: "Frontend Developer",
+      company: "Tripura Institute of Technology",
+      position: "Machine Learning Intern",
+      duration: "May - June , 2023",
+    },
+    {
+      company: "National Institute of Technology, Duragpur",
+      position: "Ml and AI Research Intern",
+      duration: "May - July , 2024",
+    },
+    {
+      company: " ",
+      position: "Research Intern",
       duration: "2022 - Present",
     },
     {
-      company: "Company Name",
+      company: "Icfai University Tripura",
+      position: "Frontend Developer Intern",
+      duration: "August - September , 2024",
+    },
+    {
+      company: "Ortus Finance ",
       position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Company Name",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Company Name",
-      position: "Frontend Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Company Name",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Company Name",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Company Name",
-      position: "Frontend Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Company Name",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Company Name",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      duration: "2024 - Present",
     },
   ],
 };
@@ -109,7 +103,7 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My Education",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+    "Aspiring programmer with a focus on full-stack development, holding a Higher Secondary degree from Bhagat Public School (2018-2020) and currently pursuing a Bachelor of Computer Science at ICFAI University Tripura (2021-Present).",
   items: [
     {
       institution: "Bhagat Public School",
@@ -132,16 +126,19 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+    "“Proficient in a diverse range of programming languages and technologies, including full-stack development, machine learning, and modern web frameworks.”",
   skillList: [
     {
       name: "HTML",
       icon: <FaHtml5 />,
     },
-
     {
       name: "JavaScript",
       icon: <FaJs />,
+    },
+    {
+      name: "TypeScript",
+      icon: <SiTypescript />,
     },
     {
       name: "React",
@@ -162,6 +159,56 @@ const skills = {
     {
       name: "Python",
       icon: <FaPython />,
+    },
+    {
+      name: "Rust",
+      icon: <SiRust />,
+    },
+    {
+      name: "MongoDB",
+      icon: <FaDatabase />, // Replace with the appropriate MongoDB icon
+    },
+    {
+      name: "Redis",
+      icon: <SiRedis />,
+    },
+    {
+      name: "Pytorch",
+      icon: <SiPytorch />, // Replace with the appropriate ML icon or relevant framework
+    },
+    {
+      name: "Deep Learning",
+      icon: <SiTensorflow />, // Replace with the appropriate DL icon or relevant framework
+    },
+    {
+      name: "Full Stack Development",
+      icon: <FaCodeBranch />, // Replace with the appropriate icon
+    },
+    {
+      name: "Git",
+      icon: <FaGitAlt />,
+    },
+    {
+      name: "Docker",
+      icon: <SiDocker />,
+    },
+
+    {
+      name: "Express.js",
+      icon: <SiExpress />,
+    },
+
+    {
+      name: "PostgreSQL",
+      icon: <SiPostgresql />,
+    },
+    {
+      name: "Firebase",
+      icon: <SiFirebase />,
+    },
+    {
+      name: "Kubernetes",
+      icon: <SiKubernetes />,
     },
   ],
 };
