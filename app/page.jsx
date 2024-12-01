@@ -19,13 +19,14 @@ const Home = () => {
               <span className="text-accent">Hriteek Roy</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I'm proficient
-              in various programming languages and technologies.
+              I’m a Computer Science undergraduate with a strong foundation in
+              software engineering, machine learning, and full-stack
+              development.
             </p>
             {/* btn and social links */}
             <div className="flex flex-col xl:flex-row items-center gap-8 ">
               <a
-                href="/assets/resume/Hriteek.pdf"
+                href="/assets/resume/Hriteek_s_Resume.pdf"
                 download="Hriteek's Resume.pdf"
                 className="uppercase flex items-center gap-2"
               >
