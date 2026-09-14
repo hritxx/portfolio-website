@@ -53,10 +53,9 @@ const Contact = () => {
           <div className="xl:h-[54%] order-2 xl:order-none ">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl ">
               <h3 className="text-4xl text-accent"> Let's work together</h3>
-              <p>
-                {/*some random text*/}I am a paragraph. Click here to add your
-                own text and edit me.I am a paragraph. Click here to add your
-                own text and edit me.
+              <p className="text-white/60">
+                Building a product, an AI feature, or a mobile app? Tell me
+                what you are working on and I will get back to you.
               </p>
               {/*input fields*/}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
@@ -73,9 +72,14 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service </SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">Data Analyst</SelectItem>
-                    <SelectItem value="mst">Full Stack Development</SelectItem>
+                    <SelectItem value="fullstack">
+                      Full-Stack Product Engineering
+                    </SelectItem>
+                    <SelectItem value="ai">AI &amp; LLM Engineering</SelectItem>
+                    <SelectItem value="mobile">Mobile Apps</SelectItem>
+                    <SelectItem value="payments">
+                      Payments &amp; Infrastructure
+                    </SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>

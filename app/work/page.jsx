@@ -19,81 +19,105 @@ import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
+// `live` and `github` are optional: client and startup work lives in private
+// repos, so those cards show only the live link.
 const projects = [
   {
     num: "01",
-    category: "Frontend",
-    title: "ECE Website Development Project",
+    category: "SaaS · Co-founder",
+    title: "WedTrack",
     description:
-      "ECE Department's website development using HTML, CSS, and JavaScript.",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
-    image: "/assets/work/thumb2.png",
-    live: "https://ece.iutripura.in/",
-    github: "https://github.com/hritxx", // Update with the actual GitHub link if available
+      "B2B SaaS for wedding photography studios: bookings, shoots, team assignments, client payments and deliveries in one place. Grew out of a studio CRM I built for photography businesses; 350+ commits with CI and automated tests.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "PostgreSQL" },
+      { name: "Prisma" },
+    ],
+    image: "/assets/work/wedtrack.png",
+    live: "https://wedtrack.in",
   },
   {
     num: "02",
-    category: "Full Stack Development",
-    title: "ChatWiz: Full Stack MERN Project",
+    category: "Fintech · Founding Engineer",
+    title: "Ortus Finance",
     description:
-      "A Chat App using React JavaScript for frontend and NodeJS and Express for backend with JWT authentication.",
+      "Production platform for a mutual fund distributor: customer web app, React Native app on the Google Play Store, and an admin dashboard for investment plans with audit logging. Razorpay payments, background jobs, AWS deployment.",
     stack: [
-      { name: "React" },
-      { name: "Node.js" },
-      { name: "Express" },
-      { name: "JWT" },
+      { name: "Next.js" },
+      { name: "React Native" },
+      { name: "TypeScript" },
+      { name: "Razorpay" },
     ],
-    image: "/assets/work/thumb1.png",
-    live: "https://chatwiz-vw96.onrender.com/",
-    github: "https://github.com/hritxx/ChatWiz", // Update with the actual GitHub link if available
+    image: "/assets/work/ortus.png",
+    live: "https://www.ortusfinance.in",
   },
   {
     num: "03",
-    category: "Frontend",
-    title: "ICFAI FC Website Development Project",
-    description: "A React-based frontend project using JavaScript and CSS.",
-    stack: [{ name: "React" }, { name: "JavaScript" }, { name: "CSS" }],
-    image: "/assets/work/thumb3.png",
-    live: "https://hritxx.github.io/icfai_fc/",
-    github: "https://github.com/hritxx/icfai_fc", // Update with the actual GitHub link if available
+    category: "AI Tooling · Open Source",
+    title: "agent-tokens",
+    description:
+      "Local-first CLI that aggregates token usage and sessions across 12 AI coding agents (Claude Code, Codex, Cursor, Gemini CLI and more) into one terminal dashboard and JSON output. Reads each agent's local store read-only: no API keys, no network calls.",
+    stack: [{ name: "Python" }, { name: "SQLite" }, { name: "CLI" }],
+    image: "/assets/work/agent-tokens.png",
+    github: "https://github.com/hritxx/agent-tokens",
   },
   {
     num: "04",
-    category: "Full Stack Development",
-    title: "নব বাজার: A MERN E-Commerce Store",
+    category: "Research · Computer Vision",
+    title: "KAZE Perceptual Hashing",
     description:
-      "A e-commerce platform with secure Stripe payments, JWT authentication, and Redis caching and robust admin control.",
-    stack: [
-      { name: "React" },
-      { name: "Node.js" },
-      { name: "MongoDB" },
-      { name: "Stripe" },
-    ],
-    image: "/assets/work/ecom.png", // Replace with an appropriate image
-    live: "https://e-commerce-store-1-u31q.onrender.com",
-    github: "https://github.com/hritxx/e-commerce-store", // Update with the actual GitHub link if available
+      "Video transition detection using KAZE feature descriptors and perceptual image hashing, compared against classic shot-boundary methods. Code accompanying a manuscript submitted to The Visual Computer.",
+    stack: [{ name: "Python" }, { name: "OpenCV" }, { name: "scikit-image" }],
+    image: "/assets/work/kaze.png",
+    github:
+      "https://github.com/hritxx/kaze-feature-descriptor-perceptual-image-hashing",
   },
   {
     num: "05",
-    category: "Frontend",
-    title: "Interactive Business Portfolio",
+    category: "Full Stack · Real-time",
+    title: "Slack Clone",
     description:
-      "A modern business portfolio website built with Next.js and Framer, featuring fast performance and engaging interactive design.",
-    stack: [{ name: "Next.js" }, { name: "Framer" }],
-    image: "/assets/work/portfolio.png", // Replace with an appropriate image
-    live: "https://ortusfinance.in",
-    github: "https://github.com/hritxx/portfolio-website", // Update with the actual GitHub link if available
+      "Team chat with workspaces, invite codes, channels and rich-text messages with emoji, built on Convex for real-time sync and authentication.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Convex" },
+      { name: "Tailwind" },
+    ],
+    image: "/assets/work/slackoff.png",
+    github: "https://github.com/hritxx/slackoff",
   },
   {
     num: "06",
-    category: "Frontend",
-    title: "Portfolio Website",
+    category: "Full Stack",
+    title: "Project Manager",
     description:
-      "A modern portfolio website built with Next.js and Framer Motion, showcasing interactive animations and responsive design to highlight creative projects and skills.",
-    stack: [{ name: "Next.js" }, { name: "Framer Motion" }],
-    image: "/assets/work/ortus.png", // Replace with an appropriate image
-    live: "https://portfolio-website-beige-five.vercel.app/services",
-    github: "https://github.com/hritxx/ortus_website", // Update with the actual GitHub link if available
+      "Jira-style project management with drag-and-drop Kanban boards, Gantt timelines and table views. Express REST API with Prisma on PostgreSQL; auth via AWS Cognito.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Redux" },
+      { name: "Express" },
+      { name: "Prisma" },
+    ],
+    image: "/assets/work/project-manager.png",
+    github: "https://github.com/hritxx/project-manager",
+  },
+  {
+    num: "07",
+    category: "Full Stack · Real-time",
+    title: "ChatWiz",
+    description:
+      "Real-time chat app with Socket.IO messaging, JWT authentication and persistent chat history in MongoDB.",
+    stack: [
+      { name: "React" },
+      { name: "Socket.IO" },
+      { name: "Node.js" },
+      { name: "MongoDB" },
+    ],
+    image: "/assets/work/thumb1.png",
+    live: "https://chatwiz-vw96.onrender.com/",
+    github: "https://github.com/hritxx/ChatWiz",
   },
 ];
 
@@ -125,13 +149,16 @@ const Work = () => {
                 {project.num}
               </div>
               {/* category */}
-              <h2 className="text-[42px ] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize ">
-                {project.category} project
-              </h2>
+              <div className="flex flex-col gap-2">
+                <span className="text-white/60">{project.category}</span>
+                <h2 className="text-[42px] font-bold leading-none text-white">
+                  {project.title}
+                </h2>
+              </div>
               {/* project description */}
               <p className="text-white/60"> {project.description} </p>
               {/*stack */}
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-x-4 gap-y-1">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
@@ -147,31 +174,43 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live Preview</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.live && (
+                  <Link
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live Preview</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
                 {/* github project button */}
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository </p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.github && (
+                  <Link
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository </p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -193,8 +232,8 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover "
-                          alt=""
+                          className="object-cover object-top"
+                          alt={`${project.title} screenshot`}
                         />
                       </div>
                     </div>

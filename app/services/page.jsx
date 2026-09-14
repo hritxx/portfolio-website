@@ -6,44 +6,31 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "ECE Website Development Project",
+    title: "Full-Stack Product Engineering",
     description:
-      " ECE Department's website development using HTML, CSS, and JavaScript.",
-    href: "https://ece.iutripura.in/",
+      "Web apps from zero to launch with Next.js, Node.js, TypeScript and PostgreSQL: auth, dashboards, background jobs and production deployments.",
+    href: "/contact",
   },
   {
     num: "02",
-    title: "ChatWiz: Full Stack MERN Project",
+    title: "AI & LLM Engineering",
     description:
-      "A Chat App using React Javascript for frontend and NodeJS and Express for backend with JWT authentication.",
-    href: "https://chatwiz-vw96.onrender.com/",
+      "LLM agents, tool calling, RAG pipelines with embeddings, structured data extraction from documents, and evaluation suites that measure quality.",
+    href: "/contact",
   },
   {
     num: "03",
-    title: "ICFAI FC website Development Project",
-    description: "A React based frontend project using Javascript and CSS.",
-    href: "https://hritxx.github.io/icfai_fc/",
+    title: "Mobile Apps",
+    description:
+      "React Native apps built and released to the Google Play Store, from first build to production updates.",
+    href: "/contact",
   },
   {
     num: "04",
-    title: "নব বাজার : A MERN E-Commerce Store ",
+    title: "Payments & Infrastructure",
     description:
-      "A e-commerce platform with secure Stripe payments, JWT authentication, and Redis caching and robust admin control.",
-    href: "https://e-commerce-store-1-u31q.onrender.com",
-  },
-  {
-    num: "05",
-    title: "Interactive Business Portfolio",
-    description:
-      "A modern business portfolio website built with Next.js and Framer, featuring fast performance and engaging interactive design.",
-    href: "https://ortusfinance.in",
-  },
-  {
-    num: "06",
-    title: "Portfolio Website",
-    description:
-      "A modern portfolio website built with Next.js and Framer Motion, showcasing interactive animations and responsive design to highlight creative projects and skills.",
-    href: "https://portfolio-website-beige-five.vercel.app/services",
+      "Razorpay and Stripe integrations, transactional workflows, AWS and Vercel deployments, DNS, CI/CD and Docker.",
+    href: "/contact",
   },
 ];
 

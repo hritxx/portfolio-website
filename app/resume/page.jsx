@@ -1,38 +1,32 @@
 "use client";
 
-import {
-  FaHtml5,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaPython,
-  FaDatabase,
-  FaGitAlt,
-  FaCodeBranch,
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaPython, FaGitAlt, FaAws } from "react-icons/fa";
 import {
   SiTypescript,
   SiTailwindcss,
   SiNextdotjs,
-  SiRust,
   SiRedis,
-  SiPytorch,
-  SiTensorflow,
   SiDocker,
   SiExpress,
   SiPostgresql,
-  SiFirebase,
-  SiKubernetes,
+  SiPrisma,
+  SiMongodb,
+  SiGo,
+  SiNestjs,
+  SiSocketdotio,
+  SiRazorpay,
+  SiLinux,
 } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
 const about = {
   title: "About Me",
   description:
-    " I am a dedicated full-stack developer with expertise in modern web technologies like React, Node.js, and TypeScript, currently pursuing a Bachelor of Computer Science. Passionate about machine learning and innovative solutions, I strive to create user-friendly applications and contribute effectively to team projects.",
+    "Full-stack and AI engineer who ships products end-to-end. Founding engineer at a fintech startup, co-founder of a SaaS for wedding studios, and building LLM agents, RAG pipelines and evaluation systems at Aganitha. Comfortable owning everything from payment flows and Play Store releases to agent tooling and infrastructure.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Hriteek",
+      fieldValue: "Hriteek Roy",
     },
     {
       fieldName: "Phone",
@@ -40,7 +34,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "5+ Years",
+      fieldValue: "2 Years",
     },
     {
       fieldName: "LinkedIn",
@@ -56,7 +50,7 @@ const about = {
     },
     {
       fieldName: "Freelance",
-      fieldValue: "Avaialable",
+      fieldValue: "Available",
     },
     {
       fieldName: "Languages",
@@ -69,32 +63,37 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "I am a dedicated full-stack developer with expertise in modern web technologies like React, Node.js, and TypeScript, currently pursuing a Bachelor of Computer Science. Passionate about machine learning and innovative solutions, I strive to create user-friendly applications and contribute effectively to team projects.",
+    "Production agentic and RAG systems at Aganitha, the full product stack at a fintech startup, and a SaaS I co-founded. Before that, research internships in machine learning and computer vision.",
   items: [
     {
-      company: "Tripura Institute of Technology",
-      position: "Machine Learning Intern",
-      duration: "May - June , 2023",
+      company: "Aganitha Cognitive Solutions",
+      position: "Junior Full Stack Developer",
+      duration: "July 2025 - Present",
     },
     {
-      company: "National Institute of Technology, Durgapur",
-      position: "Ml and AI Research Intern",
-      duration: "May - July , 2024",
+      company: "Ortus Finance",
+      position: "Founding Engineer (Part-Time)",
+      duration: "Oct 2024 - Present",
     },
     {
-      company: " ",
-      position: "Research Intern",
-      duration: "2022 - Present",
+      company: "WedTrack",
+      position: "Co-founder",
+      duration: "2025 - Present",
     },
     {
       company: "Icfai University Tripura",
       position: "Frontend Developer Intern",
-      duration: "August - September , 2024",
+      duration: "Aug - Sep 2024",
     },
     {
-      company: "Ortus Finance ",
-      position: "Full Stack Developer",
-      duration: "2024 - Present",
+      company: "National Institute of Technology, Durgapur",
+      position: "ML and AI Research Intern",
+      duration: "May - July 2024",
+    },
+    {
+      company: "Tripura Institute of Technology",
+      position: "Machine Learning Intern",
+      duration: "May - June 2023",
     },
   ],
 };
@@ -103,22 +102,17 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My Education",
   description:
-    "Aspiring programmer with a focus on full-stack development, holding a Higher Secondary degree from Bhagat Public School (2018-2020) and currently pursuing a Bachelor of Computer Science at ICFAI University Tripura (2021-Present).",
+    "B.Tech in Computer Science and Engineering from ICFAI University Tripura, graduated with a CGPA of 9.4.",
   items: [
+    {
+      institution: "ICFAI University Tripura",
+      degree: "B.Tech, Computer Science (CGPA 9.4)",
+      duration: "2021 - 2025",
+    },
     {
       institution: "Bhagat Public School",
       degree: "Higher Secondary",
-      duration: "2018 - 1020",
-    },
-    {
-      institution: "ICFAI University Tripura",
-      degree: "Bachelor of Computer Science",
-      duration: "2021 - Present",
-    },
-    {
-      institution: "UDEMY",
-      degree: "Machine Learning",
-      duration: "2023 - 2024",
+      duration: "2018 - 2020",
     },
   ],
 };
@@ -126,89 +120,87 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "“Proficient in a diverse range of programming languages and technologies, including full-stack development, machine learning, and modern web frameworks.”",
+    "Full-stack TypeScript and Python, from web and mobile to payments and infrastructure, plus LLM agents, RAG, prompt engineering and evals.",
   skillList: [
-    {
-      name: "HTML",
-      icon: <FaHtml5 />,
-    },
-    {
-      name: "JavaScript",
-      icon: <FaJs />,
-    },
     {
       name: "TypeScript",
       icon: <SiTypescript />,
-    },
-    {
-      name: "React",
-      icon: <FaReact />,
-    },
-    {
-      name: "Node.js",
-      icon: <FaNodeJs />,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: <SiTailwindcss />,
-    },
-    {
-      name: "Next.js",
-      icon: <SiNextdotjs />,
     },
     {
       name: "Python",
       icon: <FaPython />,
     },
     {
-      name: "Rust",
-      icon: <SiRust />,
+      name: "Go",
+      icon: <SiGo />,
+    },
+    {
+      name: "Next.js",
+      icon: <SiNextdotjs />,
+    },
+    {
+      name: "React",
+      icon: <FaReact />,
+    },
+    {
+      name: "React Native",
+      icon: <TbBrandReactNative />,
+    },
+    {
+      name: "Node.js",
+      icon: <FaNodeJs />,
+    },
+    {
+      name: "NestJS",
+      icon: <SiNestjs />,
+    },
+    {
+      name: "Express.js",
+      icon: <SiExpress />,
+    },
+    {
+      name: "PostgreSQL",
+      icon: <SiPostgresql />,
+    },
+    {
+      name: "Prisma",
+      icon: <SiPrisma />,
     },
     {
       name: "MongoDB",
-      icon: <FaDatabase />, // Replace with the appropriate MongoDB icon
+      icon: <SiMongodb />,
     },
     {
       name: "Redis",
       icon: <SiRedis />,
     },
     {
-      name: "Pytorch",
-      icon: <SiPytorch />, // Replace with the appropriate ML icon or relevant framework
+      name: "Socket.IO",
+      icon: <SiSocketdotio />,
     },
     {
-      name: "Deep Learning",
-      icon: <SiTensorflow />, // Replace with the appropriate DL icon or relevant framework
+      name: "Razorpay",
+      icon: <SiRazorpay />,
     },
     {
-      name: "Full Stack Development",
-      icon: <FaCodeBranch />, // Replace with the appropriate icon
+      name: "Docker",
+      icon: <SiDocker />,
+    },
+    {
+      name: "AWS",
+      icon: <FaAws />,
+    },
+    {
+      name: "Linux",
+      icon: <SiLinux />,
     },
     {
       name: "Git",
       icon: <FaGitAlt />,
     },
     {
-      name: "Docker",
-      icon: <SiDocker />,
-    },
-
-    {
-      name: "Express.js",
-      icon: <SiExpress />,
-    },
-
-    {
-      name: "PostgreSQL",
-      icon: <SiPostgresql />,
-    },
-    {
-      name: "Firebase",
-      icon: <SiFirebase />,
-    },
-    {
-      name: "Kubernetes",
-      icon: <SiKubernetes />,
+      name: "Tailwind CSS",
+      icon: <SiTailwindcss />,
     },
   ],
 };

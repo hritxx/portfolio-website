@@ -13,21 +13,23 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8  sl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-center xl:text-left">Software Developer</span>
+            <span className="text-center xl:text-left">
+              Full-Stack &amp; AI Engineer
+            </span>
             <h1 className="h1 mb-6">
               Hello I'm <br />
               <span className="text-accent">Hriteek Roy</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I’m a Computer Science undergraduate with a strong foundation in
-              software engineering, machine learning, and full-stack
-              development.
+              I build and ship products end-to-end: fintech web and mobile
+              apps, a SaaS for wedding studios, and LLM agents and RAG
+              pipelines in production.
             </p>
             {/* btn and social links */}
             <div className="flex flex-col xl:flex-row items-center gap-8 ">
               <a
-                href="/assets/resume/Hriteek_s_Resume.pdf"
-                download="Hriteek's Resume.pdf"
+                href="/assets/resume/Hriteek_Roy_Resume.pdf"
+                download="Hriteek_Roy_Resume.pdf"
                 className="uppercase flex items-center gap-2"
               >
                 <Button
