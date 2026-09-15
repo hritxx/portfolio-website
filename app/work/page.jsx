@@ -93,7 +93,7 @@ const projects = [
     category: "Full Stack",
     title: "Project Manager",
     description:
-      "Jira-style project management with drag-and-drop Kanban boards, Gantt timelines and table views. Express REST API with Prisma on PostgreSQL; auth via AWS Cognito.",
+      "Jira-style project management with drag-and-drop Kanban boards, Gantt timelines, table views and priority filters, backed by an Express REST API with Prisma on PostgreSQL.",
     stack: [
       { name: "Next.js" },
       { name: "Redux" },
